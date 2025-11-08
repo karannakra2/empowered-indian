@@ -1,5 +1,5 @@
-import { S3Client, PutObjectCommand, HeadObjectCommand } from '@aws-sdk/client-s3';
-import { config } from './config.js';
+const {S3Client, PutObjectCommand, HeadObjectCommand} = require('@aws-sdk/client-s3');
+const {config} = require('./config');
 
 // Initialize R2 client
 export const r2Client = new S3Client({

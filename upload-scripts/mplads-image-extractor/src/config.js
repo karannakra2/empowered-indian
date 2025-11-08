@@ -1,6 +1,6 @@
-import dotenv from 'dotenv';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+const dotenv = require('dotenv');
+const {fileURLToPath} = require('url');
+const {dirname, join} = require('path');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

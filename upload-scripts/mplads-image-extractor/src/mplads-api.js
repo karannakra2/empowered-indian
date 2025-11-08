@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { config } from './config.js';
+const axios = require('axios');
+const {config} = require('./config.js');
 
 // Create axios instance with MPLADS configuration
 const mpladsClient = axios.create({

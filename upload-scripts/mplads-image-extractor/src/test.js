@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-
-import { connectDatabase, getWorksWithImages } from './database.js';
-import { getWorkImages, downloadImageData } from './mplads-api.js';
-import { uploadImageToR2 } from './r2-client.js';
-import { config } from './config.js';
+const {connectDatabase, getWorksWithImages}  = require('./database.js');
+const {getWorkImages, downloadImageData}  = require('./mplads-api.js');
+const {uploadImageToR2}  = require('./r2-client.js');
 
 // Test a single work to validate the entire pipeline
 async function testSingleWork() {
